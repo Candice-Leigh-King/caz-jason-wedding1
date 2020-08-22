@@ -698,7 +698,7 @@
 /* This media query kicks into action at the gridlex sm breakpoint */
 @media(max-width:768px) {
 
-  .big-bold {font-size: 4rem;}
+  .big-bold {font-size: 3rem;}
   h2 {font-size: 1.8rem;
   padding-top: 5%;}
   .mob-hide {
