@@ -310,7 +310,7 @@
 .cross {
   color: transparent;
   z-index: 20;
-padding: 1rem;}
+  padding: 0rem 0rem 0rem 0rem;}
 
   .mobile-menu {
     position: fixed;
