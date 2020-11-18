@@ -164,13 +164,16 @@
     text-decoration: none;
     color: white;
     border: 2.5px solid;
-    padding: 1rem 4rem;
+    padding: 0.7rem 1.5rem;
     margin-top: 1rem;
     display: inline-block;
-    text-transform: uppercase;
-    font-size: 1.2rem;
+    text-transform: lowercase;
+    font-size: 0.8rem;
     font-weight: bolder;
     background-color:  rgba(230,167,158, 0.6);
+    text-align: center;
+
+    font-weight: lighter;
   }
 
   .button:hover {
@@ -188,14 +191,14 @@
   }
 
   .button-solid {
-    background-color: #e67e22;
-    border-color: #e67e22;
+    background-color: rgba(230,167,158, 0.6);
+    border-color: rgba(230,167,158, 0.6);
     color: white;
   }
 
   .button-solid:hover {
-    background-color: rgb(60, 60, 60);
-    border-color: rgb(60, 60, 60);
+    background-color:  #cfdae0;
+    border-color:  #cfdae0;
   }
 
   .arrow { /* this is the arrow button */
@@ -283,28 +286,43 @@
   }
 
   .hamburger {
-    position: absolute;
-    top:0;
-    right:0;
-    z-index: 3;
+    position: fixed;
+    top:10px;
+    right:10px;
+    z-index: 10;
     font-size: 1.5rem;
     padding:3% 3% 0%;
     background-color: rgba(230,167,158, 0.6);
     border-radius: 10px;
+    color: white;
+
   }
   .active {
-    color: white;
+
+    transform: rotate(0deg) translate(-2px,-1px);
+    transition: transform 1s cubic-bezier(.4,.32,.46,.71);
+
   }
+.hamburger:hover{
+  transform: rotate(180deg) translate(-2px,-1px);
+  transition: transform 1s cubic-bezier(.4,.32,.46,.71);
+}
+.cross {
+  color: transparent;
+  z-index: 20;
+padding: 1rem;}
 
   .mobile-menu {
-    position: absolute;
-    top: 0;
-    left:0;
-    right:0;
+    position: fixed;
+    top: -14px;
+    left: -2px;
+    right: -8px;
     bottom: 0;
-    background-color: rgb(60,60,65);
+    background-color: rgba(230,167,158, 0.6);
     padding: 10%;
+    z-index: 10;
   }
+
   .mobile-menu a {
     color: white;
     padding: 1rem;
@@ -395,8 +413,8 @@
   }
 
   a.category:hover {
-    border-color: #1abc9c; /* featured color */
-    color: #1abc9c; /* featured color */
+    border-color: #cfdae0; /* featured color */
+    color: #cfdae0; /* featured color */
   }
 
   .social-share nav [class*=fa] {
@@ -409,22 +427,27 @@
 
   /* ----- FORMS --------------------------- */
 
-  input,
+  input, select,
   textarea {
-    border-style: solid;
-    border: 2px solid rgb(200, 200, 205);
+    border: 2px solid rgba(230,167,158, 0.6);
     padding: 0.8em;
     display: block;
     width: 100%;
     font-size: 1rem;
     vertical-align: top;
+    color: rgb(92,92,97);
   }
 
   input:focus,
   textarea:focus {
     outline: none;
-    border: 2px solid #e67e22;
+    border: 2px solid #cfdae0;
     /* featured color */
+  }
+
+  select:focus{
+    outline: none;
+    border: 2px solid #cfdae0;
   }
 
   textarea {
@@ -438,6 +461,7 @@
 
   form [class*=col-] {
     padding: 5px;
+    border: solid 2px rgba(230,167,158, 0.6);
   }
 
   .email-signup input {
