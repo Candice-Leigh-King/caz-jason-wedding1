@@ -158,7 +158,19 @@
   /* ---------------  Button Styles  --------- */
   /* We have created lots of different button styles, you probably don't need to have quite this many styles depending on your site */
 
-  .button,
+  .button{text-decoration: none;
+  color: white;
+  border: 2.5px solid;
+  padding: 1rem 4rem;
+  margin-top: 1rem;
+  display: inline-block;
+  text-transform: lowercase;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  background-color:  rgba(230,167,158, 0.6);
+  text-align: center;
+  font-weight: lighter;}
+
   .button-solid,
   .button-inverted {
     text-decoration: none;
@@ -172,7 +184,6 @@
     font-weight: bolder;
     background-color:  rgba(230,167,158, 0.6);
     text-align: center;
-
     font-weight: lighter;
   }
 
@@ -436,12 +447,17 @@
     font-size: 1rem;
     vertical-align: top;
     color: rgb(92,92,97);
+    background-color: #ffffff;
   }
+
+  option {background-color: #ffffff; }
+  option:active{background-color: rgba(230,167,158, 0.6); }
 
   input:focus,
   textarea:focus {
     outline: none;
     border: 2px solid #cfdae0;
+
     /* featured color */
   }
 
