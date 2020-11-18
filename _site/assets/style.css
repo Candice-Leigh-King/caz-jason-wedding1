@@ -136,13 +136,6 @@
     margin-bottom: 1rem;
   }
 
-  .featured-stat {     /* styles for our featured statistic icons  */
-    font-size: 3rem;
-    color: #e67e22;
-    margin-bottom: 1rem;
-    display: block;
-  }
-
   .highlight { /* this is applied to spans for out highlighted text. */
     background-color: rgb(240, 240, 245);
     display: inline-block;
@@ -179,12 +172,12 @@
     padding: 0.7rem 1.5rem;
     margin-top: 1rem;
     display: inline-block;
-    text-transform: lowercase;
+    text-transform: uppercase;
     font-size: 0.8rem;
-    font-weight: bolder;
+
     background-color:  rgba(230,167,158, 0.6);
     text-align: center;
-    font-weight: lighter;
+
   }
 
   .button:hover {
@@ -196,10 +189,6 @@
     color: white;
   }
 
-  .button.inverted:hover {
-    color: #e67e22;
-    border-color: #e67e22;
-  }
 
   .button-solid {
     background-color: rgba(230,167,158, 0.6);
@@ -211,26 +200,6 @@
     background-color:  #cfdae0;
     border-color:  #cfdae0;
   }
-
-  .arrow { /* this is the arrow button */
-    font-size: 1.5rem;
-    display: inline-block;
-    text-align: center;
-    font-weight: 300;
-    line-height: 1.5rem;
-    min-width: 2.5rem;
-    border: 1px solid #e67e22;
-    padding: 0.5rem;
-    border-radius: 100%;
-    text-decoration: none;
-    color: #e67e22;
-    margin-top: 0.5rem;
-  }
-
-    .arrow:hover {
-      color: rgb(60, 60, 60);
-      border-color: rgb(60, 60, 60);
-    }
 
 
   /* Headers and footers */
@@ -254,20 +223,6 @@
   nav a:hover {
     color: rgb(203,116,107);
   }
-
-  header nav a.emphasis {
-    /* padding: 0.5rem 2rem; */
-    margin: 0 0.5rem;
-    border: 1px solid #e67e22;
-    border-radius: 2px;
-    color: #e67e22;
-  }
-
-  header nav a.emphasis:hover {
-    background-color: #e67e22;
-    color: white;
-  }
-
 
 
   /* Fixed Header Option */
@@ -405,12 +360,6 @@
     font-size: 0.9rem;
   }
 
-  .sidebar > div {
-    border: 1px solid rgb(245,245,245);
-    padding: 2rem;
-    margin: 2vh 0;
-  }
-
   .category {
     display: inline-block;
     text-decoration: none;
@@ -424,8 +373,8 @@
   }
 
   a.category:hover {
-    border-color: #cfdae0; /* featured color */
-    color: #cfdae0; /* featured color */
+    border-color: rgb(200, 200, 205); /* featured color */
+    color: rgb(200, 200, 205); /* featured color */
   }
 
   .social-share nav [class*=fa] {
@@ -451,7 +400,7 @@
   }
 
   option {background-color: #ffffff; }
-  option:active{background-color: rgba(230,167,158, 0.6); }
+  option:focus {background-color: rgba(230,167,158, 0.6); }
 
   input:focus,
   textarea:focus {
