@@ -105,6 +105,8 @@
      margin-bottom: 0.8rem;
   }
 
+  a {color: rgb(230,167,158);}
+
   .fancy {
     font-family: 'Alex Brush', cursive;
     font-weight: lighter;
@@ -665,7 +667,7 @@
   .flex-flip{
     flex-direction: row;
   }
-  h4 {font-size: 0.9rem;}
+  h4 {font-size: 0.8rem;}
   h3 {font-size: 1.5rem;}
 } /* end media query */
 
