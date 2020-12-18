@@ -646,8 +646,11 @@
 @media(max-width:768px) {
 
   .big-bold {font-size: 3rem;}
+
   h2 {font-size: 1.8rem;
   padding-top: 5%;}
+
+  .swirl img {max-height: 1rem;}
 
   .mob-hide {
     display: none;
