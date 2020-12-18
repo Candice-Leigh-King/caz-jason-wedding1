@@ -114,6 +114,9 @@
     color:rgb(230,167,158);
     font-size: 1.5rem;}
 
+  .swirl img {max-height: 1.5rem;}
+  .no-margin {margin: 0%;}
+
   /* this makes sure that the last element in any container doesn't have margin-bottom */
   h2:last-child,
   h3:last-child,
